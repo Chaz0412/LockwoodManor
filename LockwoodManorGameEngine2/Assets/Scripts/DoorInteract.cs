@@ -8,6 +8,8 @@ public class DoorInteract : Interactable
 
     Animator animator;
 
+    public AudioSource doorOpen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class DoorInteract : Interactable
     // Update is called once per frame
     void UpdateDoor()
     {
-        
+        doorOpen.Play();
         if(isOpen == true)
         {
             animator.SetBool("Open", false);
