@@ -5,18 +5,11 @@ using UnityEngine;
 public class BackDoorKey : Interactable
 {
     public Inventory inventory;
-    //public GameObject key;
-
-    void Start()
-    {
-        //key = GetComponent<GameObject>();
-    }
-
+    
     // Update is called once per frame
     void UpdateKey()
     {
         inventory.backDoorKey = true;
-        //key.gameObject.SetActive(false);
         Destroy(gameObject);
     }
 

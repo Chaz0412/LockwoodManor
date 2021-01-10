@@ -7,8 +7,6 @@ public class FrontDoorkey : Interactable
     public Inventory inventory;
     
 
-    
-
     // Update is called once per frame
     void UpdateKey()
     {

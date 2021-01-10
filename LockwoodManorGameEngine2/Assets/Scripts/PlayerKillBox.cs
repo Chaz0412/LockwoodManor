@@ -12,7 +12,7 @@ public class PlayerKillBox : MonoBehaviour
         if(other.gameObject.name == "FPSController")
         {
             Debug.Log("playerHasCollidedWithGhost");
-            //SceneManager.LoadScene("Dead");
+            SceneManager.LoadScene("Dead");
         }
     }
 
